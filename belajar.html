@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Tahun Baru</title>
+    <link rel="stylesheet" href="belajar.css">
+</head>
+<body>
+    <div class="fireworks"></div>
+    <div class="container">
+        <div class="header">
+            <h1>Selamat Tahun Baru!</h1>
+        </div>
+        <div class="content">
+            <p>Dengan penuh sukacita, kami mengundang Anda untuk merayakan Tahun Baru bersama kami.</p>
+            <ul>
+                <li>Tanggal: 1 Januari 2024</li>
+                <li>Waktu: 20:00 WIB</li>
+                <li>Lokasi: Gedung Serba Guna, Jalan Merdeka No. 10</li>
+            </ul>
+            <p>Harap konfirmasi kehadiran Anda di bawah ini:</p>
+        </div>
+        <form action="#">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="attendance">Konfirmasi Kehadiran:</label>
+            <select id="attendance" name="attendance">
+                <option value="hadir">Hadir</option>
+                <option value="tidak_hadir">Tidak Hadir</option>
+            </select>
+
+            <button type="submit">Kirim Konfirmasi</button>
+        </form>
+        <div id="whatsappLink">
+            <p>Bagikan ke teman Anda melalui WhatsApp:</p>
+            <a href="https://wa.me/085739122989?text=Saya%20akan%20hadir%20di%20perayaan%20Tahun%20Baru%20!" target="_blank">Kirim Lewat WhatsApp</a>
+        </div>
+        <div id="responseMessage"></div>
+        <script src="belajar.js"></script>
+    </div>
+</body>
+</html>
